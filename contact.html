@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../complete web development jquery/assets/vendor/bootstrap/css/bootstrap.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+           
+        }
+        body{
+          background-color: wheat;
+        }
+        header{
+            width: 100%;
+            height: 50px;
+            background-color: rgba(85, 52, 14, 0.681);
+            color: wheat;
+            font-style: italic;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 3;
+        }
+        input[type=text], select, textarea {
+            width: 100%; 
+            padding: 12px; 
+            border: 1px solid #ccc; 
+            border-radius: 4px; 
+            box-sizing: border-box; 
+            margin-top: 6px; 
+            margin-bottom: 16px;
+            resize: vertical 
+        }
+        input[type=submit] {
+            background-color:black;
+             color: white;
+             padding: 12px 20px;
+             border: none;
+             border-radius: 4px;
+             cursor: pointer;
+        }
+        input[type=submit]:hover {
+            background-color:gray;
+        }
+        .container {
+        border-radius: 5px;
+        background-color:wheat;
+        padding: 20px;
+        }
+        .navbar a{
+          color: wheat;
+        }
+        .navbar a:hover{
+          color: black;
+        }
+    </style>
+</head>
+<body>
+     <!-- Navbar start -->
+     <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color:rgba(85, 52, 14, 0.681) ;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="project.html">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aboutus.html">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Brands
+                </a>
+                <ul class="dropdown-menu bg-dark">
+                  <li><a class="dropdown-item" href="#">Dollar</a></li>
+                  <li><a class="dropdown-item" href="#">Ticonderoga</a></li>
+                  <li><a class="dropdown-item" href="#">Staedtler</a></li>
+                  <li><a class="dropdown-item" href="#">Mono</a></li>
+                  <li><a class="dropdown-item" href="#">Faber Castell</a></li>
+                  <li><a class="dropdown-item" href="#">Uni-ball</a></li>
+                  <li><a class="dropdown-item" href="#">Piano</a></li>
+                  <li><a class="dropdown-item" href="#">Picasso</a></li>
+                  <li><a class="dropdown-item" href="#">Bahadur</a></li>
+                  <li><a class="dropdown-item" href="#">Magic Rub</a></li>
+                  <li><a class="dropdown-item" href="#">Hi-Polymer</a></li>
+                  <li><a class="dropdown-item" href="#">Pilot</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar end -->
+    <header style="background-color: rgba(58, 34, 4, 0.681) ;;">
+        <marquee behavior="scroll" direction="right">You can contact us by following these steps..</marquee>
+    </header>
+            <div class="container-fluid" >
+
+              <div class="row" style=" margin-top: 20px; background-color: wheat;">
+             
+              <div class="col-lg-6">
+                <form action="action_page.php">
+              
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                  <label for="email">Email</label>
+                  <input type="text" id="email" name="email" placeholder="Your Email">
+              
+                  <label for="country">Country</label>
+                  <select id="country" name="country">
+                    <option value="australia">Pakistan</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                    <option value="usa">Australia</option>
+                    <option value="usa">USA</option>
+                    <option value="usa">UK</option>
+                    <option value="usa">Dubai</option>
+                    <option value="usa">UAE</option>
+                    <option value="usa">Africa</option>
+                    <option value="usa">Canada</option>
+                    <option value="usa">Japan</option>
+                    <option value="usa">Korea</option>
+                    <option value="usa">China</option>
+                    <option value="usa">Zimbabwe</option>
+                    <option value="usa">Any other country</option>
+                  </select>
+              
+                  <label for="">Message:</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              
+                  <input style="margin-bottom: 5px;" type="submit" value="Submit">
+
+                  <!-- <div class="container" style="font-family: 'Times New Roman', Times, serif; text-align: center; font-size: large;">
+                    <pre>Address of Company:C5/986B  Cellphone number:98754924  Email of the company:universalstationery@gmail.com</pre>
+                  </div> -->
+              
+                </form>
+              </div>
+              
+              <div class="col-lg-6">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.3141349481925!2d67.1496362153187!3d24.88726428404127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb339999415e0c3%3A0x36742eee0fd9c291!2sAptech%20Metro%20Star%20Gate!5e0!3m2!1sen!2s!4v1672484202338!5m2!1sen!2s" width="600" height="650" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            </div>
+            </div>
+            <div style="text-align: center; font-size: large;font-style: italic;">
+              <pre>
+                Address of Company:C5/9872B  Cellphone:923456742 
+                 Email of Company:universalstationary@gmail.com
+              </pre>
+             </div>
+
+            <footer style="background-color: rgba(85, 52, 14, 0.681); text-align: center; color: wheat; padding: 9px ; margin-top: 70px;">&copy; Copyright 2022</footer>
+    <script>
+        function getlocation()
+        {
+            if(navigator.geolocation)
+            {
+                navigator.geolocation.getCurrentPosition(showPosition);  
+            }
+            else{
+                alert("Browser does not support geolocation");
+            }
+            function showPosition(Position)
+            {
+                alert('Latitude:'+Position.coords.latitude+ '\n'+'Longitude:'+Position.coords.longitude)
+            }
+        }
+      </script>
+    
+   
+    <script src="../complete web development jquery/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    </body>
+    </html>
